@@ -7,26 +7,25 @@ const InputElement = ({ note, setNote, listOfNote, setListOfNote }) => {
     setListOfNote(newTab);
   };
   return (
-    <div>
+    <div className="input-class">
       <form
         onSubmit={(event) => {
           event.preventDefault();
         }}
       >
         <input type="text" onChange={(event) => setNote(event.target.value)} />
-        <input type="submit" onClick={addToNotes} />
+        <input type="submit" className="input-button" onClick={addToNotes} />
       </form>
       {/* {note} */}
       {listOfNote.map((x, index) => {
         return (
-          <div>
+          <div className="note-note">
             <Note
               text={x}
               id={index}
               listOfNote={listOfNote}
               setListOfNote={setListOfNote}
             />
-            <br />
           </div>
         );
       })}

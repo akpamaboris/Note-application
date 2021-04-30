@@ -1,3 +1,9 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(faEnvelope, faKey);
+
 const Note = ({ text, id, listOfNote, setListOfNote }) => {
   const deleteNote = (event) => {
     let newTab = [...listOfNote];
@@ -13,9 +19,14 @@ const Note = ({ text, id, listOfNote, setListOfNote }) => {
   };
 
   return (
-    <div onClick={deleteNote}>
+    <div className="Notes">
       {text}
       {/* {id} */}
+      <FontAwesomeIcon
+        className="icon-font"
+        icon="envelope"
+        onClick={deleteNote}
+      />
     </div>
   );
 };

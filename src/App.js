@@ -6,7 +6,7 @@ function App() {
   const [note, setNote] = useState("");
   const [listOfNote, setListOfNote] = useState([]);
   return (
-    <div>
+    <div className="container">
       <h1>Todo List</h1>
       <InputElement
         note={note}
