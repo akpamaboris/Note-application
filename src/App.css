@@ -13,6 +13,9 @@
   display: flex;
   justify-content: space-between;
 }
+button {
+  margin-bottom: 20px;
+}
 
 p {
   margin-top: 10px;
@@ -54,4 +57,13 @@ input[type="checkbox"]:checked + label {
 .res-search {
   padding: 10px;
   margin-top: 12px;
+}
+
+.lig {
+  background-color: white;
+}
+
+.log {
+  background-color: #18191a;
+  color: blueviolet;
 }

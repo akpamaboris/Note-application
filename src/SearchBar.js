@@ -20,7 +20,7 @@ const SearchBar = ({ note, setNote, listOfNote, setListOfNote }) => {
 
   return (
     <div>
-      <h1>SearchBar {search}</h1>
+      <h1>SearchBar </h1>
       <input type="text" onChange={searchResult} />
       <span>
         {listOfNote.map((x, index) => {
