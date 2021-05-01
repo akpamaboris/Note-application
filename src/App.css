@@ -44,3 +44,7 @@ h1 {
 .icon-font {
   margin-left: 160px;
 }
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}

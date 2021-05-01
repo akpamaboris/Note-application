@@ -1,8 +1,8 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faKey, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-library.add(faEnvelope, faKey);
+library.add(faEnvelope, faKey, faTrash);
 
 const Note = ({ text, id, listOfNote, setListOfNote }) => {
   const deleteNote = (event) => {
@@ -20,11 +20,12 @@ const Note = ({ text, id, listOfNote, setListOfNote }) => {
 
   return (
     <div className="Notes">
-      {text}
+      <input type="checkbox" id="cbox2" value="second_checkbox" />{" "}
+      <label for="cbox2">{text} </label>
       {/* {id} */}
       <FontAwesomeIcon
         className="icon-font"
-        icon="envelope"
+        icon="trash"
         onClick={deleteNote}
       />
     </div>
