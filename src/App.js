@@ -9,16 +9,17 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "lig" : "log"}>
+      <button
+        className="Btn-tog"
+        onClick={() => {
+          setDarkMode(!darkMode);
+          console.log(darkMode);
+        }}
+      >
+        Toggle Mode
+      </button>
       <div className="container">
         <div className="row-1">
-          <button
-            onClick={() => {
-              setDarkMode(!darkMode);
-              console.log(darkMode);
-            }}
-          >
-            Toggle DarkModes
-          </button>
           <br />
           <h1>Todo List</h1>
           <InputElement

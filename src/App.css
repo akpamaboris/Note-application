@@ -7,14 +7,23 @@
 .container {
   width: 60%;
   height: 1900px;
+
   margin: 0 auto;
   padding: 20px;
+
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
+
+.Btn-tog {
+  margin-top: 10px;
+  margin-left: 20px;
+}
 button {
   margin-bottom: 20px;
+  border-radius: 30px;
+  border: 0;
 }
 
 p {
@@ -31,20 +40,30 @@ h1 {
 
 .Notes {
   padding-top: 40px;
+  background-color: gainsboro;
+  padding: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  align-content: center;
+  align-items: flex-start;
 }
 .input-button {
   margin-left: 50px;
   background-color: blueviolet;
   padding: 10px;
+  border-radius: 20px;
+  border: 0;
 }
 
-.note-note {
+/* .note-note {
   background-color: gainsboro;
   margin-top: 49px;
   text-align: left;
   padding: 10px;
   width: 50%;
-}
+} */
 
 .icon-font {
   margin-left: 160px;

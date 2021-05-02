@@ -1,8 +1,13 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faEnvelope, faKey, faTrash } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faKey,
+  faTrash,
+  faEdit,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-library.add(faEnvelope, faKey, faTrash);
+library.add(faEnvelope, faKey, faTrash, faEdit);
 
 const Note = ({ text, id, listOfNote, setListOfNote }) => {
   const deleteNote = (event) => {

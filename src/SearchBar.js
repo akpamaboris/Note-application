@@ -12,7 +12,9 @@ const SearchBar = ({ note, setNote, listOfNote, setListOfNote }) => {
     if (x.toLowerCase().includes(search.toLowerCase())) {
       return (
         <div className="res-search" key={index}>
-          {x} <br />
+          {x}
+
+          <br />
         </div>
       );
     }
